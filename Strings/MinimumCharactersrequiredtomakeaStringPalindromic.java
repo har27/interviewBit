@@ -8,8 +8,8 @@ Input: AACECAAAA
 Output: 2
 */
 public class Solution {
-    public String removechar(String a, int x) {  
-        return a.substring(0, x);  
+    public String removelastchar(String a) {  
+        return a.substring(0,a.length()-1);  
     }  
     public boolean ispalindromic(String a){
         for(int i=0;i<a.length()/2;i++){
@@ -18,11 +18,12 @@ public class Solution {
             }
         }
         return true;
+    
     }
     public int solve(String A) {
         int count=0;
         while(!ispalindromic(A)){
-            A=removechar(A,A.length()-1);
+            A=removelastchar(A);
             count++;
         }
         return count;
