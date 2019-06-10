@@ -8,8 +8,8 @@ Input: AACECAAAA
 Output: 2
 */
 public class Solution {
-    public String removechar(String str, int p) {  
-        return str.substring(0, p) + str.substring(p + 1);  
+    public String removechar(String a, int x) {  
+        return a.substring(0, x);  
     }  
     public boolean ispalindromic(String a){
         for(int i=0;i<a.length()/2;i++){
